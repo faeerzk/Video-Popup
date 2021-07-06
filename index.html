@@ -5,10 +5,6 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" crossorigin="anonymous">
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" crossorigin="anonymous"></script>
-
     <style>
         /* The Modal (background) */
         .modal {
@@ -87,38 +83,44 @@
     <title>Video Pop-up</title>
 </head>
 <body>
-        <!-- Video popup Starts here -->
 
-        <div id="vid" class="modal stop-video-on-close"a
+      <!-- Video popup Starts here -->
+      
+      <div id="vid" class="modal stop-video-on-close"a
         tabindex="-1" role="dialog" aria-labelledby="Title">
-
+        
         <div class="modal-dialog" role="document">
-        <div class="modal-content">
+          <div class="modal-content">
             <div class="modal-header">
-            
-            <span type="button" class="close" data-dismiss="modal" aria-label="Close">
+              
+              <span type="button" class="close" data-dismiss="modal" aria-label="Close">
                 <span aria-hidden="true">&times;</span>
-            </span>
-            
+              </span>
+              
             </div>
             
             <div class="modal-body">
-            <iframe class="video-to-stop center-block"
-            src="https://www.youtube.com/embed/mMjVHYI-u-0?enablejsapi=1&rel=0"
-            allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-            frameborder="0" allowfullscreen>
-            </iframe>
-            
+             <iframe class="video-to-stop center-block"
+              src="https://www.youtube.com/embed/YOUTUBE?enablejsapi=1&rel=0"
+              allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+              frameborder="0" allowfullscreen>
+             </iframe>
+              
             </div>
+          </div>
         </div>
-        </div>
-        </div>
+      </div>
         <p data-toggle="modal"
-        data-target="#vid" type="button"><a id="myBtn" style="cursor: pointer;"><img src="https://en.cf-vanguard.com/wordpress/wp-content/uploads/navi_howto_vgd_01.jpg" /></a></p>
-
-        <!-- Video popup ends here -->
+         data-target="#vid" type="button"><a id="myBtn" style="cursor: pointer;"><img src="someimages.jpg" /></a></p>
+        
+      <!-- Video popup ends here -->
+        
 </body>
-
+<head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" crossorigin="anonymous">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" crossorigin="anonymous"></script>
+    </head>
 <script>
     $('.modal.stop-video-on-close').on('hidden.bs.modal', function(e) {
     $('.video-to-stop', this).each(function() {
